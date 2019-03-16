@@ -16,5 +16,16 @@ namespace Call_and_merge_inside
         {
             InitializeComponent();
         }
+
+        private void callMeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           // Youcalled yow = new Youcalled();
+            //yow.Show();
+
+            Youcalled insida = new Youcalled();
+            insida.MdiParent = this;
+            insida.Show();
+
+        }
     }
 }
